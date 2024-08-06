@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>ToDo list</title>
+</head>
+<body>
+    <header class="flex">
+        <div>
+            <h1>ToDo</h1>
+            <p>List</p>
+        </div>
+        <img src="pictures/todo.png" alt="todo" height="72.5px">
+        <ul class="navigation flex">
+            <li><a href="#first">Add items</a></li>
+            <li><a href="#second">Tasks</a></li>
+        </ul>
+    </header>
+    <main>
+        <section id="first" class="addNewItem">
+            <h2>Add Items</h2>
+            <p>Enter a new task and click on the button to add it to the list.</p>
+            <div class="flex column center">
+                <input type="text" id="taskInput" placeholder="Enter a new task">
+                <button id="addTaskButton">Add Task</button>
+            </div>
+        </section>
+        <section id="second">
+            <h2>Tasks</h2>
+            <div id="tasks"></div>
+        </section>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>
