@@ -19,14 +19,13 @@ header{
     padding-left: 10vw;
     padding-right: 10vw;
     margin-bottom: 4em;
-    align-items: left;
+    justify-content: space-between;
 }
 header h1{
     font-size: 3em;
     margin-top: 0;
     margin-bottom: 0;
     text-align: left;
-
 }
 header p{
     font-size: 1em;
@@ -42,6 +41,7 @@ header p{
 }
 .flex{display: flex;}
 .column{flex-direction: column;}
+.row{flex-direction: row;}
 #addTaskButton{
     background-color: #3a8b85;
     color: white;
@@ -79,9 +79,7 @@ header p{
 .navigation a:hover{
     color: #cacaca;
 }
-.navigation li input{
-    margin-right: -5px;
-}
+
 .task-item {
     display: flex;
     justify-content: space-between;
